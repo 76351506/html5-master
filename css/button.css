@@ -1,0 +1,77 @@
+.toggle-radio {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px; }
+.toggle-radio input[type=radio] {
+    display: none; }
+.toggle-radio input[type=radio]:checked + .track > i {
+    display: block; }
+.toggle-radio .track {
+    width: 0.2rem;
+    height: 0.2rem;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    border-radius: 3px; }
+.toggle-radio .track > i {
+    margin-left: 5px;
+    margin-top: 5px;
+    display: none; }
+
+.toggle-radio-circle .track {
+    border-radius: 100%; }
+
+.toggle-select input[type=checkbox] {
+    display: none; }
+.toggle-select input[type=checkbox]:checked + .track {
+    background-color: #01ff70; }
+.toggle-select input[type=checkbox]:checked + .track span {
+    margin-left: 0.25rem; }
+.toggle-select .track {
+    width: 0.5rem;
+    height: 0.25rem;
+    border: 1px solid #ccc;
+    border-radius: 0.125rem; }
+.toggle-select .track span {
+    display: inline-block;
+    width: 0.25rem;
+    height: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 100%;
+    box-sizing: border-box;
+    transition: margin 500ms; }
+
+.toggle-success input[type=checkbox]:checked + .track,
+.toggle-success input[type=radio]:checked + .track {
+    background-color: #01ff70; }
+.toggle-success input[type=checkbox]:checked + .track > i,
+.toggle-success input[type=radio]:checked + .track > i {
+    color: #fff; }
+
+.toggle-warning input[type=checkbox]:checked + .track,
+.toggle-warning input[type=radio]:checked + .track {
+    background-color: #ff851b; }
+.toggle-warning input[type=checkbox]:checked + .track > i,
+.toggle-warning input[type=radio]:checked + .track > i {
+    color: #fff; }
+
+.toggle-danger input[type=checkbox]:checked + .track,
+.toggle-danger input[type=radio]:checked + .track {
+    background-color: red; }
+.toggle-danger input[type=checkbox]:checked + .track > i,
+.toggle-danger input[type=radio]:checked + .track > i {
+    color: #fff; }
+
+.toggle-small.toggle-radio .track {
+    width: 0.18rem;
+    height: 0.18rem; }
+.toggle-small.toggle-radio .track > i {
+    margin-left: 3px;
+    margin-top: 3px; }
+
+.toggle-large.toggle-radio .track {
+    width: 0.25rem;
+    height: 0.25rem; }
+.toggle-large.toggle-radio .track > i {
+    margin-left: 6px;
+    margin-top: 6px; }

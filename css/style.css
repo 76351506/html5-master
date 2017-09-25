@@ -1,0 +1,95 @@
+body {
+  font-size: 0.12rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  background-color: #099fde;
+  padding-left: 0.1rem;
+  padding-right: 0.1rem; }
+  .header .title {
+    font-size: 0.16rem;
+    text-align: center;
+    height: 0.45rem;
+    line-height: 0.45rem;
+    color: #fff; }
+    .header .title .back, .header .title .more {
+      position: absolute;
+      color: #fff; }
+    .header .title .back {
+      left: 0.1rem; }
+    .header .title .more {
+      right: 0.1rem; }
+    .header .title h3 {
+      font-weight: normal; }
+  .header .search {
+    background-color: #fff;
+    display: -webkit-flex;
+    border-radius: 3px;
+    height: 0.4rem; }
+    .header .search .left {
+      margin: 0.1rem;
+      padding-right: 0.1rem;
+      border-right: 1px solid #ccc; }
+      .header .search .left > i {
+        color: #049ddc;
+        vertical-align: middle; }
+    .header .search .right {
+      -webkit-flex: 1;
+      display: -webkit-flex; }
+      .header .search .right > i {
+        margin-top: 0.1rem;
+        padding-right: 5px;
+        color: #ccc;
+        vertical-align: middle; }
+      .header .search .right > input[type=text] {
+        font-size: 0.12rem;
+        border-width: 0;
+        -webkit-flex: 1; }
+  .header .search-hot {
+    padding: 0.1rem 0.05rem; }
+    .header .search-hot > ul {
+      color: #fff;
+      text-align: center;
+      display: -webkit-flex; }
+      .header .search-hot > ul li {
+        -webkit-flex: 1; }
+
+.content {
+  -webkit-flex: 1;
+  position: relative; }
+  .content .content-slide {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background-color: orange; }
+    .content .content-slide .swiper-slide {
+      overflow-y: scroll;
+      padding: 0.1rem;
+      box-sizing: border-box; }
+
+.footer .footer-nav {
+  height: 0.45rem;
+  text-align: center;
+  display: -webkit-flex;
+  background-color: #049ddc;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box; }
+  .footer .footer-nav > li {
+    -webkit-flex: 1; }
+    .footer .footer-nav > li a {
+      color: #fff;
+      display: inline-block;
+      padding-top: 0.08rem;
+      padding-bottom: 0.08rem;
+      box-sizing: border-box; }
+      .footer .footer-nav > li a i, .footer .footer-nav > li a span {
+        display: block; }
+
+/*# sourceMappingURL=style.css.map */

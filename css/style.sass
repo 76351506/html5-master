@@ -1,0 +1,108 @@
+//撑开页面宽高
+body
+  font-size: .12rem
+  position: absolute
+  top: 0
+  bottom: 0
+  width: 100%
+  display: -webkit-flex
+  -webkit-flex-direction: column
+
+//页头
+.header
+  background-color: #099fde
+  padding-left: .1rem
+  padding-right: .1rem
+  //页头 - 标题
+  .title
+    font-size: .16rem
+    text-align: center
+    height: .45rem
+    line-height: .45rem
+    color: #fff
+    //返回、更多按钮
+    .back, .more
+      position: absolute
+      color: #fff
+    .back
+      left: .1rem
+    .more
+      right: .1rem
+    //标题内容
+    h3
+      font-weight: normal
+  //搜索框
+  .search
+    background-color: #fff
+    display: -webkit-flex
+    border-radius: 3px
+    height: .4rem
+    //搜索图标
+    .left
+      margin: .1rem
+      padding-right: .1rem
+      border-right: 1px solid #ccc
+      & > i
+        color: #049ddc
+        vertical-align: middle
+    //搜索输入框
+    .right
+      -webkit-flex: 1
+      display: -webkit-flex
+      & > i
+        margin-top: .1rem
+        padding-right: 5px
+        color: #ccc
+        vertical-align: middle
+      & > input[type=text]
+        font-size: .12rem
+        border-width: 0
+        -webkit-flex: 1
+
+  .search-hot
+    padding: .1rem .05rem
+    & > ul
+      color: #fff
+      text-align: center
+      display: -webkit-flex
+      li
+        -webkit-flex: 1
+//内容
+.content
+  -webkit-flex: 1
+
+  position: relative
+  .content-slide
+    position: absolute
+    top: 0
+    bottom: 0
+    width: 100%
+    overflow: hidden
+    background-color: orange
+
+    .swiper-slide
+      overflow-y: scroll
+      padding: .1rem
+      box-sizing: border-box
+
+//页脚
+.footer
+
+  .footer-nav
+    height: .45rem
+    text-align: center
+    display: -webkit-flex
+    background-color: #049ddc
+    border-top: 1px solid #ccc
+    box-sizing: border-box
+
+    & > li
+      -webkit-flex: 1
+      a
+        color: #fff
+        display: inline-block
+        padding-top: .08rem
+        padding-bottom: .08rem
+        box-sizing: border-box
+        i, span
+          display: block
